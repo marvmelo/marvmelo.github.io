@@ -12,16 +12,26 @@
     <p>Later, I was challeged by a friend to remake the game in C, without any of Python's high-level features. I decided to take the challenge but without any of more artistic parts; as you can see by my site, I am not very artistic. It was very interesting learning experience. Altough the games look the same on surface, they work in very different ways. C's lack of OOP and Manual Memory Management presented broke a lot of engineering options that were pratical in Python.</p>
     <h2>Space Shooter Classic</h2>
     <p><a href="https://github.com/marvmelo/space-shooter">Here</a> is the github repository of the game. The README is in Portuguese.</p>
-    <p>After some thought, my pair and I decided that we wanted a game where you could pilot a ship in 2D and shoot at enemy ships while they shoot back at you.You start the game with 5 lifes, which is the maximum you can have. Every time you get shot, you lose a life; every time you shoot an enemy, you gain 50 points. We also have some power-ups. There is a life power-up, that restore a life up to 5, and a shield power-up, that protects you against one single bullet. We thought about adding a speed power-up, but that would be more annoying than helpfu</p>
-    <p>After we split the task, I got to do mechanics of the game. I was mainly OOP code. There are 6 classes that make the game work. They are:</p>
-    <ul>
-        <li>Spacecraft()</li>
-        <li>Player(Spacecraft)</li>
-        <li>Enemy(Spacecraft)</li>
-        <li>Projectile()</li>
-        <li>PowerUp()</li>
-        <li>Sprites()</li>
-    </ul>
+    <p>After some thought, my pair and I decided that we wanted a game where you could pilot a ship in 2D and shoot at enemy ships while they shoot back at you.You start the game with 5 lifes, which is the maximum you can have. Every time you get shot, you lose a life; every time you shoot an enemy, you gain 50 points. We also have some power-ups. There is a life power-up, that restore a life up to 5, and a shield power-up, that protects you against one single bullet. We thought about adding a speed power-up, but that would be more annoying than helpful.</p>
+    <p>After we split the task, I got to do mechanics of the game. I was mainly OOP code. There are 6 classes that make the game work. They are: <code>Spacecraft(), Player(Spacecraft), Enemy(Spacecraft), Projectile(), PowerUp(), Sprites()</code>.</p>
+    <p>The most important class is Sprites, it is responsible for managing all other classes. Here is the data that is inside of it:</p>
+    <p>
+        <pre>
+            <code lang="pu">
+                class Sprites():
+
+
+                    def __init__(self, player, score):
+
+                        self.enemy_projectiles = []
+                        self.powerups = []
+                        self.player_projectiles = []
+                        self.enemies = []
+                        self.player = player
+                        self.score = score
+            </code>
+        </pre>
+    </p>
     <p style="text-align: center;"><iframe src="https://www.youtube.com/embed/6CN0ajd9lxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
     <h6><a href="../index.html">Go back to home</a></h6>
 </body>
