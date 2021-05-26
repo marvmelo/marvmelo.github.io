@@ -8,7 +8,7 @@ p
     text-align: justify; 
     margin-top: 10px; 
     margin-bottom: 10px; 
-    color: saddlebrown
+    color: saddlebrown;
 }
 a:link 
 {
@@ -44,5 +44,10 @@ figcaption
 }
 @media (min-width: 801px) 
 {
-    p {margin-right: 200px; margin-left: 200px;}
+    p, ul {margin-right: 200px; margin-left: 200px;}
+}
+ul
+{
+    color: saddlebrown;
+    text-align: justify; 
 }
