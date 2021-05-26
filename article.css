@@ -46,7 +46,7 @@ figcaption
 }
 @media (min-width: 801px) 
 {
-    p, ul, h2 {margin-right: 200px; margin-left: 200px;}
+    p, ul, h2, pre {margin-right: 200px; margin-left: 200px;}
 }
 ul
 {
