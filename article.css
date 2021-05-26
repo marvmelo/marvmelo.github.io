@@ -1,9 +1,9 @@
-h1 
+h1
 {
     text-align: center;
     color: saddlebrown;
 }
-p 
+p, h2
 {
     text-align: justify; 
     margin-top: 10px; 
@@ -44,7 +44,7 @@ figcaption
 }
 @media (min-width: 801px) 
 {
-    p, ul {margin-right: 200px; margin-left: 200px;}
+    p, ul, h2 {margin-right: 200px; margin-left: 200px;}
 }
 ul
 {
