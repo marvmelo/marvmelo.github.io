@@ -31,7 +31,7 @@
     </p>
     <p>After we split the task, I got to do mechanics of the game. I was mainly OOP code. There are 6 classes that make the game work. They are: <code>Spacecraft(), Player(Spacecraft), Enemy(Spacecraft), Projectile(), PowerUp(), Sprites()</code>.</p>
     <p>
-        The <code>Spacecraft()</code> class contains data and methdos that every ship will need, such as position on the screen, rotation method, translation method, etc.
+        The <code>Spacecraft()</code> class contains data and methods that every ship will need, such as position on the screen, a rotation method, a translation method, etc.
         The <code>Player(...)</code> and <code>Enemy(...)</code> classes are children of <code>Spacecraft()</code>.
         They have more specific data and methods, such as a method that checks for user input, in the case of <code>Player(...)</code>, or a method that decides the correct time interval to shoot, in case of <code>Enemy(...)</code>.
     </p>
@@ -54,11 +54,39 @@ class Sprites():
     <p>
         As you can see, it contains some lists that contains objects of the other classes.
         The list has elements appended and removed as they appear and disappear on the screen.
-        The <code>Sprites()</code> class has 2 methods that are called every frame: <code>update(...)</code> and <code>draw(...)</code>. They iterates over every list of objects and, respectively, calls the method with the same name that every class has implemented.
+        The <code>Sprites()</code> class has 2 methods that are called every frame: <code>update(...)</code> and <code>draw(...)</code>.
+        They iterates over every list of objects and, respectively, call their methods that will update its data and draw it on the screen.
         This class is also responsible for running the RNG to decide when to include a new power-up or enemy on screen and checking for collisions. 
     </p>
+    <p>
+        How the object data is updated is different for every class. Here is how it works for the <code>Player(..)</code> class:
+    </p>
+    <pre>
+        <code>
+def move(self):
 
+    if self.directions[0] or self.directions[1] or self.directions[2] or self.directions[3]:
+        displacement_y = -(self.directions[0] - self.directions[1])*self.speed
+        displacement_x = -(self.directions[2] - self.directions[3])*self.speed
+        self.translate_spacecraft(displacement_x, displacement_y)
+
+def rotate(self):
+
+    mouse_x, mouse_y = pygame.mouse.get_pos()
+    rel_x, rel_y = mouse_x - self.x, mouse_y - self.y
+    rel_x2, rel_y2 = self.vertices[0][0] - self.x, self.vertices[0][1] - self.y
+
+    angular_displacement = math.atan2(rel_x2, rel_y2) - math.atan2(rel_x, rel_y)
+    angular_displacement *= self.angle_speed
+    self.rotate_spacecraft(angular_displacement)
+
+def update(self):
+
+    self.move()
+    self.rotate()
+        </code>
+    </pre>
     <p style="text-align: center;"><iframe src="https://www.youtube.com/embed/6CN0ajd9lxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-    <h6><a href="../index.html">Go back to home</a></h6>
+    <h6><a href="../index.html">Go back</a></h6>
 </body>
 </html>
