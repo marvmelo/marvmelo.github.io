@@ -17,6 +17,10 @@
         Altough the games look the same on surface, they work in very different ways. C's lack of OOP and Manual Memory Management broke a lot of engineering options that were pratical in Python.
         This time, I used Raylib as my library of choice.
     </p>
+    <p>
+        In this article I will not go in details about how everything works.
+        I intent only to talk about some of the more interesting points of what I developed.
+    </p>
     <h2>Space Shooter Classic</h2>
     <p><a href="https://github.com/marvmelo/space-shooter">Here</a> is the github repository of the game. The README is in Portuguese.</p>
     <p>Here is a video showcasing the game. It has music and sound effects, but my screen recording software could not capture it.</p>
@@ -75,7 +79,6 @@ def rotate(self):
     mouse_x, mouse_y = pygame.mouse.get_pos()
     rel_x, rel_y = mouse_x - self.x, mouse_y - self.y
     rel_x2, rel_y2 = self.vertices[0][0] - self.x, self.vertices[0][1] - self.y
-
     angular_displacement = math.atan2(rel_x2, rel_y2) - math.atan2(rel_x, rel_y)
     angular_displacement *= self.angle_speed
     self.rotate_spacecraft(angular_displacement)
@@ -86,6 +89,9 @@ def update(self):
     self.rotate()
         </code>
     </pre>
+    <p>
+        
+    </p>
     <p style="text-align: center;"><iframe src="https://www.youtube.com/embed/6CN0ajd9lxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
     <h6><a href="../index.html">Go back</a></h6>
 </body>
