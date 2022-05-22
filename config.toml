@@ -1,4 +1,20 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Marcus Melo's website'
+title = "Marcus Melo's website"
 theme = "sam"
+
+[params]
+    homepage             = "main"
+
+[[params.mainMenu]]
+    link = "about-me"
+    text = "about me"
+
+[[params.mainMenu]]
+    link = "contact"
+    text = "contact"
+
+[[params.mainMenu]]
+    link = "projects"
+    text = "projects"
+

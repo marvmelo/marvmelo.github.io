@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marcus Melo&#39;s website</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Marcus Melo&#39;s website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 May 2022 19:03:34 -0300</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Space Shooter</title>
+      <link>http://example.org/projects/space-shooter/</link>
+      <pubDate>Sun, 22 May 2022 19:03:34 -0300</pubDate>
+      
+      <guid>http://example.org/projects/space-shooter/</guid>
+      <description>This was a project that I made originally as a graded college assignment.
+It was first made in Python and then rewritten in C.
+Here is the code for the C version. The repo for the Python version is set to private because it contains copyrighted songs and I don&amp;rsquo;t want to get sued.
+Space Shooter Classic&amp;nbsp;¶   Space Shooter C&amp;nbsp;¶   </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://example.org/contact/</link>
+      <pubDate>Sun, 22 May 2022 18:55:39 -0300</pubDate>
+      
+      <guid>http://example.org/contact/</guid>
+      <description>Professional email
+LinkedIn page
+Github page</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://example.org/about-me/</link>
+      <pubDate>Sun, 22 May 2022 17:12:06 -0300</pubDate>
+      
+      <guid>http://example.org/about-me/</guid>
+      <description>Who am I?&amp;nbsp;¶ My name is Marcus Vinícius de Melo and I am from Recife, Pernambuco, Brazil. I am currently a Computer Science student at CIn-UFPE and a former Physics student.
+Why did I get into Physics and why did I leave it?&amp;nbsp;¶ I went to Middle and High School at an experimental school at which the faculty was composed of professors from Pernambuco&amp;rsquo;s Federal University (UFPE). In my High School years, I became close to the Physics faculty which usually organized the scientific olympiads that I used to participate.</description>
+    </item>
+    
+  </channel>
+</rss>
