@@ -5,14 +5,14 @@
   box-sizing: border-box; }
 
 html {
-  background-color: wheat;
+  background-color: saddlebrown;
   font-family: "Didact Gothic", "sans serif";
   font-size: 16px; }
 
 body {
   font-size: 16px;
   font-family: "Didact Gothic", "sans serif";
-  color: saddlebrown;
+  color: wheat;
   line-height: 2rem;
   letter-spacing: 1.5px;
   text-shadow: none;
@@ -31,7 +31,7 @@ h1, h2, h3 {
   margin-bottom: 0.5em;
   font-family: 'Didact Gothic', sans-serif;
   opacity: 0.6;
-  color: saddlebrown; }
+  color: wheat; }
 
 li {
   opacity: 0.8; }
@@ -145,7 +145,7 @@ article {
     text-align: left; }
   article .anchor-link > a {
     border-bottom: none;
-    color: green; }
+    color: wheat; }
     article .anchor-link > a:hover > .pilcrow {
       display: inline; }
   article span.pilcrow {
