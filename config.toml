@@ -2,6 +2,7 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = "Marcus Melo's website"
 theme = "sam"
+publishDir = "docs"
 
 [params]
     homepage             = "main"
