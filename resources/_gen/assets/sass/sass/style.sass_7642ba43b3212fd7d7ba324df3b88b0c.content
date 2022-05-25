@@ -16,6 +16,8 @@ body {
   line-height: 2rem;
   letter-spacing: 1.5px;
   text-shadow: none;
+  text-align: justify;
+  text-justify: interword;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,15 +47,15 @@ p {
   display: inline; }
 
 a {
-  color: darkblue;
+  color: lightgreen;
   text-decoration: none;
   border-bottom: 2px solid #cccccc;
   transition: 0.5s ease; }
   a:hover {
-    color: darkblue;
+    color: lightgreen;
     font-style: none; }
   a:active {
-    color: darkblue; }
+    color: lightgreen; }
 
 hr {
   margin: 1rem 0;

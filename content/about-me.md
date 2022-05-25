@@ -26,6 +26,6 @@ My relationship with coding was not new, in fact, I believe I have been coding s
 
 ## What am I up to now?
 
-I am mostly interest in functional programming right now.
+I am mostly interested in functional programming right now.
 
 I have been wanting to learn Scala and Rust, but I have been too busy.
