@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 date: 2022-05-22T18:55:39-03:00
-draft: true
+draft: false
 ---
 
 [Professional email](malito:marcusmelodev@gmail.com)

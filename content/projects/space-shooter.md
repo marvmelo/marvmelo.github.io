@@ -1,7 +1,7 @@
 ---
 title: "Space Shooter"
 date: 2022-05-22T19:03:34-03:00
-draft: true
+draft: false
 ---
 
 This was a project that I made originally as a graded college assignment.
