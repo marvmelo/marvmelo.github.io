@@ -6,7 +6,18 @@
     <description>Recent content on Marcus Melo&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 May 2022 19:03:34 -0300</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Sep 2022 11:08:26 -0300</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First attempt at Ray Tracing and Bezier Curves</title>
+      <link>http://example.org/projects/pg/</link>
+      <pubDate>Wed, 21 Sep 2022 11:08:26 -0300</pubDate>
+      
+      <guid>http://example.org/projects/pg/</guid>
+      <description>Last semester I took a course in Computer Graphics. It was mostly Linear Algebra, which made me feel right at home. My baggage as a former Physics student made it so that almost all the mathematics was quite easy. I could focus more on implement my group&amp;rsquo;s project, which I did almost all by myself.
+There were two projects: a ray tracing and bezier curves.
+Ray Tracing&amp;nbsp;¶ The code for this project can be found here.</description>
+    </item>
+    
     <item>
       <title>Space Shooter</title>
       <link>http://example.org/projects/space-shooter/</link>

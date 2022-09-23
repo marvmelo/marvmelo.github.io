@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<title>
+    First attempt at Ray Tracing and Bezier Curves - Marcus Melo&rsquo;s website
+</title>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.340878fc8d62a3d7225fde976bbfd927a0d4cf74ebcc543582f75db500c057fd.css" integrity="sha256-NAh4/I1io9ciX96Xa7/ZJ6DUz3TrzFQ1gvddtQDAV/0=" crossorigin="anonymous" media="screen">
+
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="First attempt at Ray Tracing and Bezier Curves"/>
+<meta name="twitter:description" content="Last semester I took a course in Computer Graphics. It was mostly Linear Algebra, which made me feel right at home. My baggage as a former Physics student made it so that almost all the mathematics was quite easy. I could focus more on implement my group&rsquo;s project, which I did almost all by myself.
+There were two projects: a ray tracing and bezier curves.
+Ray Tracing&nbsp;¶ The code for this project can be found here."/>
+
+<meta property="og:title" content="First attempt at Ray Tracing and Bezier Curves" />
+<meta property="og:description" content="Last semester I took a course in Computer Graphics. It was mostly Linear Algebra, which made me feel right at home. My baggage as a former Physics student made it so that almost all the mathematics was quite easy. I could focus more on implement my group&rsquo;s project, which I did almost all by myself.
+There were two projects: a ray tracing and bezier curves.
+Ray Tracing&nbsp;¶ The code for this project can be found here." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/projects/pg/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2022-09-21T11:08:26-03:00" />
+<meta property="article:modified_time" content="2022-09-21T11:08:26-03:00" />
+
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        First attempt at Ray Tracing and Bezier Curves
+        
+    </title>
+</head>
+
+<body>
+    
+    
+    <header class="wrap flex-container">
+        <h1>First attempt at Ray Tracing and Bezier Curves</h1>
+    </header>
+    
+    <main class="wrap">
+        
+        <article role="article" class="flex-container"><p>Last semester I took a course in Computer Graphics. It was mostly Linear Algebra, which made me feel right at home. My baggage as a former Physics student made it so that almost all the mathematics was quite easy. I could focus more on implement my group&rsquo;s project, which I did almost all by myself.</p>
+<p>There were two projects: a ray tracing and bezier curves.</p>
+
+<h2 id="ray-tracing" class="anchor-link"><a href="#ray-tracing">Ray Tracing<span class="pilcrow">&nbsp;¶</span></a></h2>
+<p>The code for this project can be found <a href="https://github.com/marvmelo/ray-tracing">here</a>.</p>
+<p>The idea of ray tracing is to shoot several light rays from the camera through the screen and calculate the effects that the light bouncing around the scene has. My implementation allows for and arbritary number of objects (spheres and planes) to be rendered with any color configuration possible using Phong Shading.</p>
+<p>The image bellow was my favorite. I rendered two semi-transparent spheres with high refraction angles in a box of mirrors and one single light source. It took about 20 minutes to render (Python was not the best choice).
+<p style="text-align:center;">
+    <img src="/img/raytracing.jpg" alt="Ray Tracing"  />
+</p>
+</p>
+
+<h2 id="bezier-curves" class="anchor-link"><a href="#bezier-curves">Bezier Curves<span class="pilcrow">&nbsp;¶</span></a></h2>
+<p>The second project I had to implement was a bezier curves visualizer. The code can be found <a href="https://github.com/marvmelo/bezier-curves">here</a>.</p>
+<p>I had to do this completely by myself. In the case of ray tracing, my team mates wrote an ealier version of the code that evolved into spaghetti and had to be rewritten. That means that, although the final code was entirely written by me, I can&rsquo;t say I did it all alone. But for the bezier curves project, none of them managed to write a single line of code.</p>
+<p>The idea of bezier curves is to use <a href="https://en.wikipedia.org/wiki/De_Casteljau%27s_algorithm">De Casteljau&rsquo;s Algorithm</a> to calculate the curve whose points are a interpolation of the given control points. In my implementation, the curve is actually approximated by several small lines.</p>
+<p>My application is able to render an arbitrary number of bezier curves and change their control points. I used pygame for convenience. The image bellow shows two bezier curvers and their control points.
+<p style="text-align:center;">
+    <img src="/img/bezier.png" alt="Bezier Curves"  />
+</p>
+</p>
+
+<h2 id="what-now" class="anchor-link"><a href="#what-now">What now?<span class="pilcrow">&nbsp;¶</span></a></h2>
+<p>I am currently working on a way to combine the two projects. My goal is to be able to render arbitrary bezier surfaces with ray tracing. This new endeavor is being written in C++ due to performance reasons. Unfortunately, I have not been able to progress a lot because of my number of classes. I hope I can finish it in November, when I will be on vacations.</p>
+</article>
+        
+
+        
+        
+        <nav role="navigation" class="flex-container bottom-menu">
+            
+<hr />
+<p>
+
+
+    
+
+    
+        
+            <a href="/about-me">about me</a>
+        
+    
+    
+        
+            &#183; 
+            <a href="/contact">contact</a>
+        
+            &#183; 
+            <a href="/projects">projects</a>
+        
+    
+    
+    
+        &#183; 
+        <a href="/">
+            main
+        </a>
+    
+
+</p>
+        </nav>
+        
+        
+    </main>
+    
+    <footer class="flex-container footer">
+</footer>
+    
+    
+</body>
+
+</html>
