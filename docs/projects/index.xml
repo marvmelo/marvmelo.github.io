@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 22 May 2022 19:02:24 -0300</lastBuildDate><atom:link href="http://example.org/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Space Invaders AI</title>
+      <link>http://example.org/projects/atari/</link>
+      <pubDate>Fri, 23 Sep 2022 22:24:46 -0300</pubDate>
+      
+      <guid>http://example.org/projects/atari/</guid>
+      <description>I was about 16 when a friend showed me a video of an AI playing Super Mario. This had a great influence on my decision to learn how to code. To this day, reinforcement learning is my favorite area of machine learning and I find genetic computing very intriguing.
+Recently I had the chance to try something like that by myself in a class I took about Machine Learning (although in much smaller scale).</description>
+    </item>
+    
+    <item>
       <title>First attempt at Ray Tracing and Bezier Curves</title>
       <link>http://example.org/projects/pg/</link>
       <pubDate>Wed, 21 Sep 2022 11:08:26 -0300</pubDate>

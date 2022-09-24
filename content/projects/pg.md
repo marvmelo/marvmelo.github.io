@@ -14,7 +14,7 @@ The code for this project can be found [here](https://github.com/marvmelo/ray-tr
 
 The idea of ray tracing is to shoot several light rays from the camera through the screen and calculate the effects that the light bouncing around the scene has. My implementation allows for and arbritary number of objects (spheres and planes) to be rendered with any color configuration possible using Phong Shading, reflection and transparency.
 
-The image bellow was my favorite. I rendered two semi-transparent spheres with high refraction angles in a box of mirrors and one single light source. It took about 20 minutes to render (Python was not the best choice).
+The image below was my favorite. I rendered two semi-transparent spheres with high refraction angles in a box of mirrors and one single light source. It took about 20 minutes to render (Python was not the best choice).
 ![Ray Tracing](/img/raytracing.jpg)
 
 ## Bezier Curves
@@ -25,7 +25,7 @@ I had to do this completely by myself. In the case of ray tracing, my team mates
 
 The idea of bezier curves is to use [De Casteljau's Algorithm](https://en.wikipedia.org/wiki/De_Casteljau%27s_algorithm) to calculate the curve whose points are a interpolation of the given control points. In my implementation, the curve is actually approximated by several small lines.
 
-My application is able to render an arbitrary number of bezier curves and change their control points. I used pygame for convenience. The image bellow shows two bezier curvers and their control points.
+My application is able to render an arbitrary number of bezier curves and change their control points. I used pygame for convenience. The image below shows two bezier curvers and their control points.
 ![Bezier Curves](/img/bezier.png)
 
 ## What now?
