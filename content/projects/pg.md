@@ -6,7 +6,7 @@ draft: false
 
 Last semester I took a course in Computer Graphics. It was mostly Linear Algebra, which made me feel right at home. My baggage as a former Physics student made it so that almost all the mathematics was quite easy. I could focus more on implement my group's project, which I did almost all by myself.
 
-There were two projects: a ray tracing and bezier curves.
+There were two projects: a ray tracing engine and a bezier curves engine.
 
 ## Ray Tracing
 
